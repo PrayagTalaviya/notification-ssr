@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NotificationService } from './shared/notification.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demoAmgular';
+  constructor(public noti:NotificationService){
+    // this.noti.requestPermission()
+  }
+  send(){
+    this.noti.requestPermission()
+  }
 }

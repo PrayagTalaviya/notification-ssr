@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "notification-efa6f": {
+      "hosting": {
+        "demoAmgular": [
+          "notification-efa6f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "notification-efa6f"
+  }
+}
