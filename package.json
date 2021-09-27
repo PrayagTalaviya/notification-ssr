@@ -11,7 +11,8 @@
     "dev:ssr": "ng run demoAmgular:serve-ssr",
     "serve:ssr": "node dist/demoAmgular/server/main.js",
     "build:ssr": "ng build --prod && ng run demoAmgular:server:production",
-    "prerender": "ng run demoAmgular:prerender"
+    "prerender": "ng run demoAmgular:prerender",
+    "prayag":"ng build --prod && firebase deploy"
   },
   "private": true,
   "dependencies": {

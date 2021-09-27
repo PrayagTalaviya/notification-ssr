@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-message',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessageComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private meta:Meta
+  ) { }
 
   ngOnInit(): void {
+    this.meta.addTag({keywords:'prayag, message,srvies'})
   }
 
 }
