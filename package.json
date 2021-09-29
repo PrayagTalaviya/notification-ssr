@@ -3,16 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
+    "start": "npm run serve:ssr",
+    "build": "npm run build:ssr",
     "dev:ssr": "ng run demoAmgular:serve-ssr",
     "serve:ssr": "node dist/demoAmgular/server/main.js",
     "build:ssr": "ng build --prod && ng run demoAmgular:server:production",
-    "prerender": "ng run demoAmgular:prerender",
-    "prayag":"ng build --prod && firebase deploy"
+    "prerender": "ng run demoAmgular:prerender"
   },
   "private": true,
   "dependencies": {
@@ -43,6 +39,7 @@
     "@types/express": "^4.17.0",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+    "bufferutil": "^4.0.4",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
@@ -54,6 +51,9 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.1.2"
+    "typescript": "~4.1.2",
+    "utf-8-validate": "^5.0.6",
+    "ws": "^8.2.2",
+    "xhr2": "^0.2.1"
   }
 }

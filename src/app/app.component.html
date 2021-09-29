@@ -1,18 +1,12 @@
-<mat-toolbar color="primary">
-  <button color="primary" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <button class="m-lr-5" mat-raised-button color="accent" [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</button>
-  <button class="m-lr-5" mat-raised-button color="accent" [routerLink]="['/aboutas']" routerLinkActive="router-link-active" >About as</button>
-  <button class="m-lr-5" mat-raised-button color="accent" [routerLink]="['/message']" routerLinkActive="router-link-active" >Message</button>
-  <button class="m-lr-5" mat-raised-button color="accent" (click) = 'send()'>Mess</button>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
-</mat-toolbar>
-<h1>hi this angular</h1>
+<div class="nav">
+  <div class="nav-item" [routerLink]="['/home']" routerLinkActive="router-link-active" >
+    home
+  </div>
+  <div class="nav-item" [routerLink]="['/aboutas']" routerLinkActive="router-link-active" >
+    about as
+  </div>
+  <div class="nav-item" [routerLink]="['/message']" routerLinkActive="router-link-active" >
+    message
+  </div>
+</div>
 <router-outlet></router-outlet>

@@ -13,9 +13,7 @@ export class AboutasComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.meta.updateTag({keywords:"angular, javascript, typescript, meta, seo"});
-    this.meta.updateTag({description:'This is an article about Angular Meta service'});
-    
+
   }
 
 }

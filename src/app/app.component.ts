@@ -9,7 +9,7 @@ import { NotificationService } from './shared/notification.service';
 export class AppComponent {
   title = 'demoAmgular';
   constructor(public noti:NotificationService){
-    // this.noti.requestPermission()
+    this.noti.requestPermission()
   }
   send(){
     this.noti.requestPermission()

@@ -13,7 +13,7 @@ export class MessageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.meta.addTag({keywords:'prayag, message,srvies'})
+  
   }
 
 }
